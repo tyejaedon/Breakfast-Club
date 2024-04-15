@@ -49,12 +49,24 @@ nav{
     width: 100vmax;
     margin-top: 0;
 }
+.checkout{
+    display: flex;
+    margin: 0 50%;
+}
 button{
    background-color: inherit;
    border-width: 0;
-    margin: 0 50%;
+   
 }
-button > *:hover{
+#checkout > *:hover{
 color: green;}
 
- 
+ .check:hover{
+    color: green;
+ }
+ .check > *:active{
+    box-shadow: 50%;
+ }
+ .cancel:hover{
+    color: red;
+ }

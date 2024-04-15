@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "Stylesheet" href="index.css">
+   
     <script src="https://kit.fontawesome.com/c838794bcf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -34,11 +35,61 @@
         <h2>Our Menu</h2>
         <h3>Main Dishes</h3>
         <div class=" food">
-        <p>Rice - ksh 200</p>
-        <p>Chapati - ksh 50</p>
-        <p>Beef - ksh 280</p>
-        <p>Chicken (Full) - ksh 1200</p>
-        <p>Chips - ksh 120</p>
+        <p>Rice - ksh 200
+            <button class="check" id = "check1">
+                <i class="fa-solid fa-cart-plus"></i>
+        
+            </button>
+         
+                <span id="counter1">0</span>
+        
+            <button input type="button" class="cancel" id="cancel1" >
+                <i class="fa-solid fa-square-xmark"></i>
+            </button>
+           
+
+        </p>
+           
+        <p>Chapati - ksh 50
+            <button input type="button" class="check" id="check2" >
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+
+            <span id="counter2">0</span>
+
+            <button input type="button" class="cancel" id="cancel2" >
+                <i class="fa-solid fa-square-xmark"></i>
+            </button>
+        </p>
+
+
+        <p>Beef - ksh 280
+            <button input type="button" class="check" id="check3" >
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <span id="counter3">0</span>
+            <button input type="button" class="cancel" id="cancel3" >
+                <i class="fa-solid fa-square-xmark"></i>
+            </button>
+        </p>
+        <p>Chicken (Full) - ksh 1200
+            <button input type="button" class="check" id="check4" >
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <span id="counter4">0</span>
+            <button input type="button" class="cancel" id="cancel4" >
+                <i class="fa-solid fa-square-xmark"></i>
+            </button>
+        </p>
+        <p>Chips - ksh 120
+            <button input type="button" class="check" id="check5" >
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <span id="counter5">0</span>
+            <button input type="button" class="cancel" id="cancel5" >
+                <i class="fa-solid fa-square-xmark"></i>
+            </button>
+        </p>
     </div>
 
         <h3>Beverages</h3>
@@ -52,15 +103,18 @@
 
     </div>
 
-    <div class="checkout"> 
+   
     <h1>CHECKOUT</h1>
     <p>
         Prepare to have your meal served at your doorstep!
     </p>
  
 
-    
-    <button>
+    <div class="checkout"> 
+        <h3>
+            TOTAL: KSH <span id="total">0</span>
+        </h3>
+    <button id = checkout>
         <i class="fa-solid fa-cart-shopping" style="font-size:50px;"></i>
     </button>
       
@@ -68,6 +122,8 @@
 
 
     </div>
- 
+    <script src="index.js">
+
+    </script>
 </body>
 </html>
