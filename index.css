@@ -70,3 +70,6 @@ color: green;}
  .cancel:hover{
     color: red;
  }
+ #ordered{
+    	display: flex;
+ }
