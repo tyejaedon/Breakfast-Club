@@ -44,6 +44,8 @@ for (var i = 0; i < images.length; i++) {
 
 
 
+
+
 // Add a click event listener to each check button
 checkButtons.forEach((checkButton, index) => {
   checkButton.addEventListener('click', () => {
@@ -97,5 +99,31 @@ cancel.forEach((cancel, index) => {
    
   });
 });
+//function to convert count array to csv
+let link = document.createElement("a");
 
 
+function arraytocsv(array){
+   // Initialize CSV content with the header
+   let csvContent = "data:text/csv;charset=utf-8,";
+
+   array.forEach(function(rowArray) {
+    let row = rowArray.join(",");
+    csvContent += row + "\\r\\n"; // Add a new line at the end of each row
+  });
+   // Encode the CSV content so it can be used in a data URI
+
+  
+   let encodedUri = encodeURI(csvContent);
+   link.setAttribute("href",encodedUri);
+   link.setAttribute("download", "my_data.csv");
+   document.body.appendChild(link);
+  link.click();
+   
+
+
+}
+
+cart.addEventListener('click',()=>{
+  arraytocsv(count);
+})
